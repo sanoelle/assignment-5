@@ -1,0 +1,799 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*responsive setup*/
+@-moz-viewport{ width: device-width; scale: 1;} /*mozilla*/
+@-ms-viewport{ width: device-width; scale: 1;} /*microsoft*/
+@-o-viewport{ width: device-width; scale: 1;} /*opera*/
+@-webkit-viewport{ width: device-width; scale: 1;} /*safari*/
+@viewport{ width: device-width; scale: 1;} /*all other web browswers must go before the regular viewport!*/
+
+/* TOP OF SITE*/ 
+
+img{
+	width: 100%;
+}
+
+.logo{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 7rem;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.logo2{
+	display: none;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 20rem;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 23px;
+	line-height: 26px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: #1d317b;
+	font-weight: bold;
+}
+
+.masthead{
+	background-color:#ffffff;
+}
+
+/* NAVIGATION */
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	background-color: #00b1b7;
+	display: block;
+	text-align: center;
+	padding: 1rem 3%; 
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem;
+	border-top: 1px solid #ffffff;
+	font-size: 11px;
+	line-height: 1rem;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #036;
+	color: #00a7b9;
+}
+
+.pricestable{
+	display: none;
+}
+
+.scheduletable{
+	display: none;
+}
+
+.hourstable{
+	display: none;
+}
+
+.ws{
+	line-height: .2rem;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-align:center;
+	margin-top: .8rem;
+	background-color: #D5F4F1;
+	color: #1d317b;
+	height:3rem;
+	padding: 1rem;
+	width: 100%;
+	margin-left: 0%;
+}
+
+@media only screen and (min-width: 25em){
+	.nav{
+		overflow:auto;
+	}
+	
+	.nav li{
+		float: left;
+		width: 33.33%;	
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 31em){
+	
+	.ages{
+	display: none;
+	}
+	
+	.prices{
+		display:none;
+	}
+	
+	.lastprices{
+		display: none;
+	}
+	
+	.pricestable {
+	width:90%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 2rem;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+	
+	}.pricestable table{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	}
+	
+	.pricestable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	}
+	
+	.pricestable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+	}
+	
+	.pricestable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	}
+	
+	.pricestable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	}
+	
+	.pricestable tr:hover td{
+	background-color:#e5e5e5;
+	}
+	
+	.pricestable td{
+	vertical-align:middle;
+	background-color:#ffffff;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:10px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	}
+	
+	.pricestable tr:last-child td{
+	border-width:0px 1px 1px 0px;
+	}
+	
+	.pricestable tr td:last-child{
+	border-width:0px 0px 1px 1px;
+	}
+	
+	.pricestable tr:last-child td:last-child{
+	border-width:0px 0px 1px 0px;
+	}
+	
+	.pricestable tr:first-child td{
+	background:-o-linear-gradient(bottom, #003366 5%, #1d317b 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1d317b), color-stop(1, #1d317b) );
+	background:-moz-linear-gradient( center top, #bcffff 5%, #bcffff 100% );	
+	background: -o-linear-gradient(top,#1d317b, #1d317b);
+	background-color:#1d317b;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	color:#ffffff;
+	}
+	
+	.pricestable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+	}
+	
+	.pricestable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+	}
+}
+	
+
+@media only screen and (min-width:40em){
+	
+	.logo{
+	display: none;
+		
+	}
+	
+	.logo2{
+	margin-left: 7%;
+	display: block;
+	}
+	
+	h1{
+	display: none;
+	}
+	
+	.nav{
+		text-align: center;
+		background-color: #00b1b7;
+	}
+	
+	.nav li{
+		display: inline-block;
+		float: left;
+		margin-left: 7%;
+		width: auto;
+	}
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top: 0;
+	}
+	
+	.placeholder,
+	.maevaid{
+	/*margin-bottom: 0rem;*/
+	/*margin-top: 1rem;*/
+	padding-top: 1rem;
+	width: 70%;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	}
+	
+	.maevkids{
+	width: 70%;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	}
+
+	.caption{
+	margin-top: 0rem;
+	width: 50%;
+	display: block; 
+ 	margin-left: auto; 
+	margin-right: auto;
+	}
+	
+	.info,
+	.info2{
+	padding-left: 6.5rem;
+	padding-right: 9rem;
+	float: left;
+	}	
+}
+
+@media only screen and (min-width: 48em){
+	
+
+/*HOURS TABLE*/
+
+	.hourstable {
+	width:90%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 0rem;
+	margin-top: 1rem;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+	
+	}.hourstable table{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	}
+	
+	.hourstable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	}
+	
+	.hourstable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+	}
+	
+	.hourstable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	}
+	
+	.hourstable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	}
+	
+	.hourstable td{
+	vertical-align:middle;
+	background-color:#ffffff;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:10px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	}
+	
+	.hourstable tr:last-child td{
+	border-width:0px 1px 1px 0px;
+	}
+	
+	.hourstable tr td:last-child{
+	border-width:0px 0px 1px 1px;
+	}
+	
+	.hourstable tr:last-child td:last-child{
+	border-width:0px 0px 1px 0px;
+	}
+	
+	.hourstable tr:first-child td{
+	background:-o-linear-gradient(bottom, #1d317b 5%, #1d317b 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1d317b), color-stop(1, #1d317b) );
+	background:-moz-linear-gradient( center top, #1d317b 5%, #bcffff 100% );	
+	background: -o-linear-gradient(top,#1d317b, #338EC41d317b);
+	background-color:#1d317b;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	color:#ffffff;
+	}
+	
+	.hourstable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+	}
+	
+	.hourstable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+	}
+	
+	.hourstable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+	font-size: 8px;
+	}
+	
+/*HOURS TABLE ENDS*/
+	
+	.bar{   
+    width: 90%;
+	display:block;
+	margin-left: auto; 
+	margin-right: auto;
+    height: 30px;
+	margin-bottom: -1rem;
+	}
+	
+	.famswim{
+	width: 90%;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	}
+	
+	.ws{
+	line-height: 1rem;
+	text-align:center;
+	margin-top: .8rem;
+	background-color: #D5F4F1;
+	color: #036;
+	height:2.5rem;
+	padding: 1rem;
+	width: 90%;
+	margin-left: 5%;
+	}
+	
+	.day,
+	.swim,
+	.times,
+	.hours,
+	.lasthours{
+	display: none;
+	}
+	
+/*SCHEDULE TABLE*/
+	
+	.scheduletable {
+	width:90%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 2rem;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+	
+	}.scheduletable table{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	}
+	
+	.scheduletable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	}
+	
+	.scheduletable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+	}
+	
+	.scheduletable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	}
+	
+	.pricestable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	}
+	
+	.scheduletable td{
+	vertical-align:middle;
+	background-color:#ffffff;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:10px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	}
+	
+	.scheduletable tr:last-child td{
+	border-width:0px 1px 1px 0px;
+	}
+	
+	.scheduletable tr td:last-child{
+	border-width:0px 0px 1px 1px;
+	}
+	
+	.scheduletable tr:last-child td:last-child{
+	border-width:0px 0px 1px 0px;
+	}
+	
+	.scheduletable tr:first-child td{
+	background:-o-linear-gradient(bottom, #1d317b 5%, #1d317b 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1d317b), color-stop(1, #1d317b) );
+	background:-moz-linear-gradient( center top, #1d317bf 5%, #1d317bf 100% );	
+	background: -o-linear-gradient(top,#1d317b, #1d317b);
+	background-color:#1d317b;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	color:#ffffff;
+	}
+	
+	.scheduletable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+	}
+	
+	.scheduletable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+	}
+}
+
+/*@media only screen and (min-width:60em){
+	
+	.logo{
+		margin-left: 7%;
+	}
+	
+	h1{
+	font-size: 30px;
+	text-align: left;
+	margin-left: 20%;
+	margin-top: -6rem;
+	margin-bottom: 2rem;
+	margin-right: 70rem;
+	line-height: 1.8rem;
+	
+	}
+}*/
+
+@media only screen and (min-width:66em){
+	
+	.info,
+	.info2{
+	padding-left: 13rem;
+	padding-right: 16rem;
+	float: left;
+	}
+
+}
+
+/* BODY */
+
+em{
+	font-style:italic;
+}
+
+strong{
+	font-weight: bold;
+}
+
+html, body{
+	width: 100%;
+	font-family: sans-serif;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.about{
+	line-height: 1rem;
+	text-align:center;
+	font-weight:bold;
+	margin-top: 2rem;
+	margin-bottom: .5rem;
+	color: #1d317b;
+	font-family:Verdana, Geneva, sans-serif;
+	text-transform:uppercase;
+	
+}
+
+.info{
+	font-size: 14px;
+	width: 90%;
+	margin: 0 7%;
+	line-height: 1rem;
+	margin-bottom: .2rem;
+}
+
+.info2{
+	font-size: 14px;
+	width: 90%;
+	margin: 0 7%;
+	line-height: 1rem;
+	margin-bottom: .7rem;
+}
+
+.ages{
+	line-height: 1rem;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom: .2rem;	
+	margin-top: 1rem;
+	text-transform:uppercase;
+	font-size: 12px;
+}
+
+/*.break{
+	background-color:#E5E5E5;
+	height:20rem;
+	padding:1rem 0 3rem;
+	position:absolute;
+}
+
+.break2{
+	background-color:#B6B6B6;
+	height:19rem;
+	padding:1rem 0 3rem;
+}*/
+
+/* SCHEDULE */
+/*.ws{
+	line-height: 1rem;
+	text-align:center;
+	margin-top: .8rem;
+	background-color: #D5F4F1;
+	color: #000;
+	height:2.5rem;
+	padding: 1rem;
+	width: 100%;
+	margin-left: 0%;
+}*/
+
+.swim{
+	line-height: 1rem;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom: .2rem;	
+	margin-top: .5rem;
+	text-transform:uppercase;
+	font-size: 12px;
+}
+
+.day{
+	line-height: 1rem;
+	text-align:center;
+	font-weight:bold;	
+	margin-top: -1rem;
+	text-transform:uppercase;
+	font-size: 12px;
+	background-color:#1d317b;
+	color: #fff;
+	height: 1.5rem;
+	padding: .3rem;
+}
+
+.times{
+	font-size: 11.7px;
+	text-align: center;
+	line-height: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.hours{
+	margin-bottom: 1.2rem;
+	line-height: 1rem;
+	margin: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.lasthours{
+	/*margin-bottom: 2rem;*/
+	margin-top: 1rem;
+	padding-bottom: 0rem;
+	line-height: 1rem;
+	margin: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.placeholder{
+	margin-bottom: 0rem;
+	margin-top: 1rem;
+	padding-left: 1.5rem;	
+	padding-right: 1.5rem;
+}
+
+.maevaid{
+	margin-bottom: 0rem;
+	margin-top: 1rem;
+	padding-left: 1.5rem;	
+	padding-right: 1.5rem;
+}
+
+.maevkids{
+	margin-bottom: 2rem;
+	margin-top: 0rem;
+	padding-left: 1.5rem;	
+	padding-right: 1.5rem;
+}
+
+.caption{
+	font-size: 11px;
+	text-align: center;
+	margin-top: -0.2rem;
+	margin-bottom: 2rem;
+	line-height: 1.5rem;
+	color: #036;
+}
+
+.famswim{
+	margin-top: 1rem;
+	margin-bottom: -1rem;
+}
+
+/* PRICES */
+
+.prices{
+	margin-bottom: 0rem;
+	line-height: 1rem;
+	/*width: 90%;
+	margin: 0 25%;*/
+	font-size: 14px;
+	text-align:center;
+}
+
+.lastprices{
+	margin-bottom: 1rem;
+	margin-top: 0rem;
+	line-height: 1rem;
+	/*width: 90%;
+	margin: 0 25% 1.5rem;*/
+	font-size: 14px;
+	text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+	text-align:center;
+	font-size: 11px;
+	color: #fff;
+	line-height: 1rem;
+}
+
+.baseback {
+	height: 6rem;
+	background-color: #1d317b;
+	padding: 2rem 2% 3rem; /* top, lr, bottom */ 
+}
+
+/*main{
+	width: 90%;
+	margin-bottom: 2rem; 
+}*/
+	
